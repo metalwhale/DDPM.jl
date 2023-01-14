@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ddpm:
+    build:
+      context: .
+    volumes:
+      - ../:/usr/src/DDPM.jl
+    working_dir: /usr/src/DDPM.jl
+    tty: true
